@@ -79,8 +79,9 @@ export default class RichTextEditor extends Component<Props> {
             keyBindingFn={this._customKeyHandler}
             handleKeyCommand={this._handleKeyCommand}
             onTab={this._onTab}
+            onBlur={props.onBlur}
             onChange={this._onChange}
-            placeholder="Tell a story..."
+            placeholder={props.placeholder}
             ref="editor"
             spellCheck={true}
           />
